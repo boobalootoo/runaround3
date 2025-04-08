@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D OSM Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <canvas id="threeCanvas"></canvas>
+    <div id="joystick-left">
+        <div id="joystick-left-center"></div>
+        <div id="north-label" class="direction-label">N</div>
+        <div id="south-label" class="direction-label">S</div>
+        <div id="east-label" class="direction-label">E</div>
+        <div id="west-label" class="direction-label">W</div>
+    </div>
+    <div id="joystick-right">
+        <div id="joystick-right-center"></div>
+    </div>
+    <div id="mini-map-button" class="control-panel">
+        <span class="icon">🗺️</span>
+    </div>
+    <div id="mini-map-window" class="collapsible-window">
+        <div class="window-header">
+            Mini Map
+            <span class="close-icon">×</span>
+        </div>
+        <div class="window-content">
+            <canvas id="miniMapCanvas"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="controls.js"></script>
+    <script src="minimap.js"></script>
+    <script src="buildings.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
